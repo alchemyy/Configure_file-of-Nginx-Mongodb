@@ -17,7 +17,7 @@ start)
 ulimit -n 64000
 log_begin_msg "Starting MongoDB server"     
 #/usr/bin/mongod --fork --quiet --dbpath /data/db --logpath /var/log/mongodb.log    
-/usr/local/mongodb/bin/mongod --fork --quiet --journal --maxConns=2400 --dbpath /data/db/ --logpath /home/ubuntu/log/mongodb.log    
+/usr/local/mongodb/bin/mongod --fork --quiet --journal --maxConns=20000 --dbpath /data/db/ --logpath /home/ubuntu/log/mongodb.log    
 log_end_msg 0    
 ;;    
 stop)    
