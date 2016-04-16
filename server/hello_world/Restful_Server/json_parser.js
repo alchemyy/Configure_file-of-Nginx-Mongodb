@@ -51,7 +51,7 @@ app.post('/post', function (req, res) {
                 jsonStr = null;
             }
             jsonStr ? res.send('JSON RECEIVED AS Stream') : res.send({"status": "error"});
-            console.log('JSON RECEIVED AS Stream');
+            //console.log('JSON RECEIVED AS Stream');
             //console.log(jsonStr);
             var rtd = mongoose.model('rtd',rtd_Schema);
             var RT_Data = new rtd(jsonStr);
